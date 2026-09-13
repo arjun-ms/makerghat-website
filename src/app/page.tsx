@@ -30,7 +30,7 @@ export default function OurStory() {
           </p>
         </div>
         <div className="w-full md:w-1/2 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-inner bg-gray-200">
-          <Image src="/images/dd-1.png" alt="How MG started" fill className="object-cover" />
+          <Image src="/images/dd-1.png" alt="How MG started" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
       </section>
 
@@ -40,7 +40,7 @@ export default function OurStory() {
       <section className="px-6 md:px-12 py-16 md:py-20 bg-white flex flex-col gap-16 md:gap-20">
         <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-0">
           <div className="w-full md:w-1/2 relative h-64 md:h-80 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/powai-1.png" alt="Our mission" fill className="object-cover" />
+            <Image src="/images/powai-1.png" alt="Our mission" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="w-full md:w-1/2 md:pl-12">
             <h2 className="font-parkinsans font-semibold text-3xl md:text-4xl text-mg-purple mb-4 md:mb-6">Our mission</h2>
@@ -52,7 +52,7 @@ export default function OurStory() {
 
         <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-8 md:gap-0">
           <div className="w-full md:w-1/2 relative h-64 md:h-80 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/pbl-1.png" alt="Why making" fill className="object-cover" />
+            <Image src="/images/pbl-1.png" alt="Why making" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="w-full md:w-1/2 md:pr-12">
             <h2 className="font-parkinsans font-semibold text-3xl md:text-4xl text-mg-purple mb-4 md:mb-6">Why making?</h2>

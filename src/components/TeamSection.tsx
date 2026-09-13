@@ -15,14 +15,14 @@ export default function TeamSection() {
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 max-w-5xl mx-auto">
         {categories.map((cat, idx) => (
-          <div key={idx} className="flex flex-col items-center w-full md:w-1/3 group cursor-pointer">
+          <button key={idx} className="flex flex-col items-center w-full md:w-1/3 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-mg-orange p-4 rounded-3xl">
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden mb-6 shadow-md transition-transform duration-300 group-hover:scale-105">
-              <Image src={cat.image} alt={cat.name} fill className="object-cover" />
+              <Image src={cat.image} alt={cat.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
             <h3 className="font-parkinsans font-semibold text-xl text-mg-purple group-hover:text-mg-orange transition-colors">
               {cat.name}
             </h3>
-          </div>
+          </button>
         ))}
       </div>
     </section>

@@ -10,7 +10,7 @@ export default function PartnerSection() {
         {/* Partner Card */}
         <div className="bg-[#E5E3E5] p-6 rounded-lg flex flex-col sm:flex-row items-center gap-6">
           <div className="relative w-full sm:w-32 h-32 rounded-md overflow-hidden flex-shrink-0 bg-gray-200 shadow-sm">
-            <Image src="/images/partner.png" alt="STEM Collective" fill className="object-cover" />
+            <Image src="/images/partner.png" alt="STEM Collective" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <p className="text-black text-base md:text-lg font-outfit">
             Partnering with STEM organisations across India by anchoring Shikshagraha STEM Collective
@@ -22,25 +22,25 @@ export default function PartnerSection() {
         {/* Image Mosaic */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/3d.png" alt="3d" fill className="object-cover" />
+            <Image src="/images/3d.png" alt="3d" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/tn3.png" alt="tn3" fill className="object-cover" />
+            <Image src="/images/tn3.png" alt="tn3" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/tel.png" alt="tel" fill className="object-cover" />
+            <Image src="/images/tel.png" alt="tel" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/test3.png" alt="test3" fill className="object-cover" />
+            <Image src="/images/test3.png" alt="test3" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/tower.png" alt="tower" fill className="object-cover" />
+            <Image src="/images/tower.png" alt="tower" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/sant.png" alt="sant" fill className="object-cover" />
+            <Image src="/images/sant.png" alt="sant" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="relative h-32 rounded-lg overflow-hidden bg-gray-200">
-            <Image src="/images/part3.png" alt="part3" fill className="object-cover" />
+            <Image src="/images/part3.png" alt="part3" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
         </div>
       </div>
