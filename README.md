@@ -1,42 +1,31 @@
-# MakerGhat - Our Story
+﻿# MakerGhat OurStory Page Replication
 
-This project is a pixel-accurate recreation of the MakerGhat "Our Story" page, built with Next.js and Tailwind CSS.
+This project is a pixel-accurate recreation of the MakerGhat "Our Story" page using Next.js and Tailwind CSS, based on the provided Figma design specs.
+
+## Live Deployment
+Live on Vercel: *(Vercel deployment URL here)*
 
 ## Project Structure
-
-- `src/app/page.tsx`: The main landing page integrating all components.
-- `src/app/layout.tsx`: Root layout defining fonts and global settings.
-- `src/app/globals.css`: Global styles, font definitions (Outfit, Parkinsans), and Tailwind theme configurations.
-- `src/components/Navbar.tsx`: Responsive navigation bar.
-- `src/components/Footer.tsx`: Semantic footer with FAQs, resources, and newsletter subscription form.
-- `src/components/Timeline.tsx`: Horizontal timeline component.
-- `src/components/TeamSection.tsx`: "Behind MakerGhat" section displaying the team, support system, and volunteers.
-- `src/components/PartnerSection.tsx`: "Our Partners" section displaying the STEM Collective highlight and partner grid.
-- `public/images/`: Contains all assets extracted directly from the provided Figma file.
+- src/app/page.tsx: Main structural layout, featuring overlapping desktop tabs and responsive image stacking.
+- src/components/Timeline.tsx: Component managing the vertical chronological history of MakerGhat.
+- src/components/Footer.tsx: 4-column responsive footer.
+- src/components/Navbar.tsx: Responsive top navigation.
+- public/images/: Exported static assets from Figma.
 
 ## Development Approach
-
-1. **Figma Extraction**: Extracted colors, typography, layout structures, and PNG assets using the Framelink Figma MCP.
-2. **Component Modularity**: Split the monolithic UI into functional React components (`Navbar`, `Timeline`, `TeamSection`, `Footer`) to ensure maintainability.
-3. **Responsive Design**: Designed Mobile-First using Tailwind breakpoints (`sm:`, `md:`) to ensure perfect rendering across 375px (mobile), 768px (tablet), and 1440px+ (desktop) viewports. Touch-friendly targets and flexible CSS Grids/Flexbox were utilized.
-4. **Typography Optimization**: Configured Next.js `next/font/google` for optimal Cumulative Layout Shift (CLS) prevention using the `Outfit` and `Parkinsans` fonts.
+1. **Figma CSS Extraction**: We analyzed the raw CSS exports from Figma (css(all layers)-export.txt) to derive exact widths, coordinates, spacing, and brand colors.
+2. **Responsive Translation**: We adapted the rigid 1440px absolute coordinate system from Figma into flexible Tailwind classes. Negative margins (-ml-[32px]) were used to mimic the exact overlapping folder-tab appearance on desktop, falling back to a horizontal scrolling container on mobile viewports.
+3. **Mobile First & Breakpoints**: Standard Tailwind breakpoints (md:) were utilized to switch from single-column mobile views to multi-column desktop views. Margins and image heights were proportionally scaled down for 375px screens to prevent overflow and maintain touch-friendly tap targets.
 
 ## Assumptions Made
-
-- **Interactions & States**: The mobile hamburger menu icon and the desktop dropdown arrows (Curriculum, Training, Programs) are currently static. Because open menu frames were not provided in the Figma design, creating custom sub-links and dropdown styling was omitted to avoid scope creep and strictly adhere to the provided design.
-- **Form Submission**: The newsletter subscription is a semantic `<form>` but currently lacks a submission handler or backend endpoint.
-- **Routing**: Links are standard Next.js `<Link>` components, temporarily pointing to `#` until respective pages are developed.
+- The absolute positioning in Figma was a stylistic choice for the desktop layout, not a mandate for mobile.
+- The Parkinsans and Outfit font families are available globally in the project. (Resolved next/font/google build issues by standardizing local font usage).
 
 ## AI Attribution
+This project was developed with the assistance of **Google Antigravity Agent**. 
+AI was utilized for:
+- Automating the translation of Figma CSS coordinates into responsive Tailwind structures.
+- Debugging Vercel build errors related to Windows native bindings and Font fetching.
+- Structuring the React component hierarchy.
+- Generating the implementation plan and verifying viewport regressions.
 
-This project was built pair-programming with Google Antigravity. AI tools used:
-- Antigravity Native Agent (Model: M16) for codebase scaffolding, Tailwind CSS implementation, debugging Windows native bindings, and component refactoring.
-- Framelink Figma MCP for extracting design tokens and image assets directly from Figma.
-- Subagent Parallel Reviewers for validating Code Standards and Spec Requirements.
-
-## Deployment
-
-To deploy this project to Vercel:
-1. Push this repository to your GitHub account.
-2. Log into [Vercel](https://vercel.com).
-3. Import the repository and deploy with default Next.js settings.

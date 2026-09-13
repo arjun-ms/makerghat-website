@@ -39,27 +39,27 @@ export default function OurStory() {
             <h1 className="absolute top-[60px] md:top-[103px] left-6 md:left-[46px] font-bold text-[36px] md:text-[50px] leading-[63px] text-[#2C2C2C] z-10 max-w-[927px]">
               The story that built MakerGhat
             </h1>
-            <div className="w-full relative h-[393px]">
+            <div className="w-full relative h-[200px] md:h-[393px]">
               <Image src="/images/additive.png" alt="Bambu Lab 3D Printer" fill className="object-cover" />
             </div>
           </section>
 
           {/* Our Mission */}
-          <section className="flex flex-col md:flex-row items-center justify-between gap-12 mt-[160px] px-6 md:px-[90px]">
+          <section className="flex flex-col md:flex-row items-center justify-between gap-12 mt-[80px] md:mt-[160px] px-6 md:px-[90px]">
             <div className="w-full md:w-[402px]">
               <h3 className="font-semibold text-[32px] leading-[39px] text-black mb-6">Our mission</h3>
               <p className="text-[18px] leading-[28px] text-black font-normal">
                 Our mission is to make hands-on, maker-centered learning accessible across India, empowering young people to think critically, build confidently, and solve real-world problems beyond traditional classrooms.
               </p>
             </div>
-            <div className="w-full md:w-[500px] relative h-[400px]">
+            <div className="w-full md:w-[500px] relative h-[250px] md:h-[400px]">
               <Image src="/images/powai-1.png" alt="Our mission" fill className="object-cover rounded-[20px]" />
             </div>
           </section>
 
           {/* Why making? */}
-          <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-[160px] px-6 md:px-[90px]">
-            <div className="w-full md:w-[500px] relative h-[400px]">
+          <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-[80px] md:mt-[160px] px-6 md:px-[90px]">
+            <div className="w-full md:w-[500px] relative h-[250px] md:h-[400px]">
               <Image src="/images/pbl-1.png" alt="Why making" fill className="object-cover rounded-[20px]" />
             </div>
             <div className="w-full md:w-[402px]">
@@ -71,20 +71,20 @@ export default function OurStory() {
           </section>
 
           {/* How did MG start */}
-          <section className="flex flex-col md:flex-row items-center justify-between gap-12 mt-[160px] px-6 md:px-[90px]">
+          <section className="flex flex-col md:flex-row items-center justify-between gap-12 mt-[80px] md:mt-[160px] px-6 md:px-[90px]">
             <div className="w-full md:w-[402px]">
               <h3 className="font-semibold text-[32px] leading-[39px] text-black mb-6">How did MG start</h3>
               <p className="text-[18px] leading-[28px] text-black font-normal">
                 MG origin story featuring founders, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
               </p>
             </div>
-            <div className="w-full md:w-[500px] relative h-[400px]">
+            <div className="w-full md:w-[500px] relative h-[250px] md:h-[400px]">
               <Image src="/images/dd-1.png" alt="How MG started" fill className="object-cover rounded-[20px]" />
             </div>
           </section>
 
           {/* Timeline */}
-          <div className="mt-[200px] px-6 md:px-[90px]">
+          <div className="mt-[100px] md:mt-[200px] px-6 md:px-[90px]">
             <Timeline />
           </div>
 
