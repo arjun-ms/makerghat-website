@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -16,32 +16,32 @@ export default function OurStory() {
         {/* Overlapping Tabs Layer */}
         <div className="flex items-end relative z-10 w-full overflow-x-auto hide-scrollbar">
           {/* Tab 1: MakerGhat story */}
-          <div className="bg-[#F9F4E8] px-[42px] py-[14px] rounded-t-[20px] flex-shrink-0 z-40 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
+          <div className="bg-mg-cream px-[42px] py-[14px] rounded-t-[20px] flex-shrink-0 z-40 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
             <span className="font-semibold text-[18px] text-black">MakerGhat story</span>
           </div>
           {/* Tab 2: MakerGhat team */}
-          <div className="bg-[#F1EEF9] px-[42px] py-[14px] rounded-t-[20px] flex-shrink-0 -ml-[32px] z-30 relative h-[56px] min-w-[254px] flex items-center justify-center cursor-pointer">
+          <div className="bg-mg-light-purple/20 px-[42px] py-[14px] rounded-t-[20px] flex-shrink-0 -ml-[32px] z-30 relative h-[56px] min-w-[254px] flex items-center justify-center cursor-pointer">
             <span className="text-[18px] text-black text-center">MakerGhat team</span>
           </div>
           {/* Tab 3: Support system */}
-          <div className="bg-[#FFF3CC] px-[68px] py-[14px] rounded-t-[20px] flex-shrink-0 -ml-[32px] z-20 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
+          <div className="bg-yellow-100 px-[68px] py-[14px] rounded-t-[20px] flex-shrink-0 -ml-[32px] z-20 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
             <span className="text-[18px] text-black">Support system</span>
           </div>
           {/* Tab 4: Volunteers & Alumni */}
-          <div className="bg-[#FDEAE5] px-[49px] py-[14px] rounded-t-[20px] flex-shrink-0 -ml-[32px] z-10 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
+          <div className="bg-orange-50 px-[49px] py-[14px] rounded-t-[20px] flex-shrink-0 -ml-[32px] z-10 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
             <span className="text-[18px] text-black">Volunteers & Alumni</span>
           </div>
         </div>
 
         {/* Main Content Container */}
-        <div className="bg-[#F9F4E8] rounded-tr-[20px] rounded-b-[20px] rounded-bl-[20px] relative z-20 -mt-[1px] pb-[100px]">
+        <div className="bg-mg-cream rounded-tr-[20px] rounded-b-[20px] rounded-bl-[20px] relative z-20 -mt-[1px] pb-[100px]">
           
           {/* SVG Dotted Line Background */}
           <div className="absolute top-[400px] left-0 w-full h-[2657px] pointer-events-none z-0 hidden lg:block opacity-50" style={{ backgroundImage: "url('/images/extracted/Vector_62.svg')", backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}></div>
 
           {/* Hero Title & Image */}
           <section className="pt-[40px] md:pt-[60px] flex flex-col relative w-full z-10">
-            <h1 className="px-6 md:px-[46px] font-bold text-[36px] md:text-[52px] md:leading-[65px] text-[#4A3B7F] mb-[40px] z-10 max-w-[927px]">
+            <h1 className="px-6 md:px-[46px] font-bold text-[36px] md:text-[52px] md:leading-[65px] text-mg-purple mb-[40px] z-10 max-w-[927px]">
               The story that built MakerGhat
             </h1>
             <div className="w-full relative h-[250px] md:h-[450px]">

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 export default function PartnerSection() {
@@ -22,22 +22,22 @@ export default function PartnerSection() {
         {/* Image Mosaic */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           <div className="relative h-[120px] rounded-[10px] overflow-hidden bg-gray-200">
-            <Image src="/images/extracted/3d_1.png" alt="3d" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
+            <Image src="/images/extracted/3d_1.png" alt="3D Printing Partner" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
           </div>
           <div className="relative h-[120px] rounded-[10px] overflow-hidden bg-gray-200">
-            <Image src="/images/extracted/tn3_1.png" alt="tn3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
+            <Image src="/images/extracted/tn3_1.png" alt="TN3 Partner" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
           </div>
           <div className="relative h-[120px] rounded-[10px] overflow-hidden bg-gray-200">
-            <Image src="/images/extracted/tel_1.png" alt="tel" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
+            <Image src="/images/extracted/tel_1.png" alt="TEL Partner" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
           </div>
           <div className="relative h-[120px] rounded-[10px] overflow-hidden bg-gray-200">
-            <Image src="/images/extracted/test_3_1.png" alt="test3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
+            <Image src="/images/extracted/test_3_1.png" alt="Test 3 Partner" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
           </div>
           <div className="relative h-[120px] rounded-[10px] overflow-hidden bg-gray-200">
-            <Image src="/images/extracted/part_3_1.png" alt="part3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
+            <Image src="/images/extracted/part_3_1.png" alt="Part 3 Partner" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
           </div>
           <div className="relative h-[120px] rounded-[10px] overflow-hidden bg-gray-200">
-            <Image src="/images/extracted/dd_1.png" alt="dd" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
+            <Image src="/images/extracted/dd_1.png" alt="DD Partner" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all" />
           </div>
         </div>
       </div>

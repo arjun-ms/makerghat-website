@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
