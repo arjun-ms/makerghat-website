@@ -1,70 +1,83 @@
-import React from 'react';
+﻿import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4A3A80] text-[#F1EEF9] px-6 md:px-16 py-16 flex flex-col md:flex-row justify-between gap-12 border-t-[8px] border-[#362C5F]">
-      <div className="w-full md:w-1/4 flex flex-col">
-        <h3 className="font-parkinsans font-bold text-4xl text-white leading-tight">Connect<br />with Us</h3>
-        <div className="mt-8 space-y-4 font-outfit text-base">
-          <Link href="#" className="block hover:text-white">About Us</Link>
-          <div className="flex items-center gap-3">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-            <span>+91 9447756484</span>
+    <footer className="w-full bg-[#4A3B7F] font-outfit text-white relative">
+      <div className="w-full relative h-[110px] -mt-[110px]">
+        <Image src="/images/extracted/Frame_269.png" alt="City Skyline" fill className="object-cover object-bottom" />
+      </div>
+      <div className="max-w-[1440px] mx-auto px-6 md:px-[90px] py-12 md:py-16 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+          
+          {/* Column 1: Connect with Us */}
+          <div className="flex flex-col gap-6">
+            <h2 className="font-bold text-[32px] md:text-[40px] leading-[1.2]">
+              Connect<br />with Us
+            </h2>
+            <Link href="/about" className="text-[16px] hover:underline">About Us</Link>
+            <div className="flex flex-col gap-3 mt-4">
+              <a href="tel:+919447756484" className="flex items-center gap-3 text-[16px] hover:text-mg-orange transition-colors">
+                <FaPhoneAlt /> +91 9447756484
+              </a>
+              <a href="mailto:info@makerghat.org" className="flex items-center gap-3 text-[16px] hover:text-mg-orange transition-colors">
+                <FaEnvelope /> info@makerghat.org
+              </a>
+            </div>
           </div>
-          <div className="flex items-center gap-3">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            <span>info@makerghat.org</span>
+
+          {/* Column 2: Resources */}
+          <div className="flex flex-col gap-4">
+            <h3 className="font-semibold text-[20px] mb-2">Resources</h3>
+            <Link href="/blueprint" className="text-[16px] hover:underline text-gray-200">Blueprint to our makerspaces</Link>
+            <Link href="/ignite" className="text-[16px] hover:underline text-gray-200">IGNITE Incubator Program</Link>
+            <Link href="/fellowship" className="text-[16px] hover:underline text-gray-200">MakerGaon Fellowship</Link>
+            <Link href="/curriculum" className="text-[16px] hover:underline text-gray-200">Curriculum Resources</Link>
+            <Link href="/dashboard" className="text-[16px] hover:underline text-gray-200">Dashboard</Link>
+            <Link href="/reports" className="text-[16px] hover:underline text-gray-200">Reports</Link>
           </div>
+
+          {/* Column 3: FAQs */}
+          <div className="flex flex-col gap-4">
+            <h3 className="font-semibold text-[20px] mb-2">FAQs</h3>
+            <Link href="/space" className="text-[16px] hover:underline text-gray-200">Space</Link>
+            <Link href="/curriculum" className="text-[16px] hover:underline text-gray-200">Curriculum</Link>
+            <Link href="/training" className="text-[16px] hover:underline text-gray-200">Training</Link>
+            <Link href="/evidence" className="text-[16px] hover:underline text-gray-200">Evidence</Link>
+          </div>
+
+          {/* Column 4: Logo & Newsletter */}
+          <div className="flex flex-col gap-6 md:items-end">
+            <div className="text-[32px] font-bold flex items-center gap-2">
+              <span className="text-mg-orange">✋</span>
+              Maker<br/>Ghat
+            </div>
+            <button className="bg-mg-orange text-white px-6 py-3 rounded-full font-medium hover:bg-orange-600 transition-colors w-full md:w-auto">
+              Subscribe to our newsletter
+            </button>
+            <div className="flex gap-4 mt-2">
+              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-mg-orange transition-colors">
+                <FaInstagram size={16} />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-mg-orange transition-colors">
+                <FaFacebookF size={16} />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-mg-orange transition-colors">
+                <FaYoutube size={16} />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-mg-orange transition-colors">
+                <FaLinkedinIn size={16} />
+              </a>
+            </div>
+            <div className="text-[12px] text-gray-300 text-right mt-8">
+              MakerGhat and its assets are licensed<br/>under CC BY-SA 4.0
+            </div>
+          </div>
+
         </div>
-      </div>
-
-      <div className="w-full md:w-1/4 flex flex-col">
-        <h4 className="font-parkinsans font-semibold text-xl text-white mb-6">Resources</h4>
-        <ul className="space-y-4 font-outfit text-base">
-          <li><Link href="#" className="hover:text-white">Blueprint to our makerspaces</Link></li>
-          <li><Link href="#" className="hover:text-white">IGNITE Incubator Program</Link></li>
-          <li><Link href="#" className="hover:text-white">MakerGaon Fellowship</Link></li>
-          <li><Link href="#" className="hover:text-white">Curriculum Resources</Link></li>
-          <li><Link href="#" className="hover:text-white">Dashboard</Link></li>
-          <li><Link href="#" className="hover:text-white">Reports</Link></li>
-        </ul>
-      </div>
-
-      <div className="w-full md:w-1/4 flex flex-col">
-        <h4 className="font-parkinsans font-semibold text-xl text-white mb-6">FAQs</h4>
-        <ul className="space-y-4 font-outfit text-base">
-          <li><Link href="#" className="hover:text-white">Space</Link></li>
-          <li><Link href="#" className="hover:text-white">Curriculum</Link></li>
-          <li><Link href="#" className="hover:text-white">Training</Link></li>
-          <li><Link href="#" className="hover:text-white">Evidence</Link></li>
-        </ul>
-      </div>
-
-      <div className="w-full md:w-1/4 flex flex-col items-start md:items-end">
-        <div className="flex items-center gap-2 mb-12">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="#F1805E" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-          </svg>
-          <span className="font-parkinsans font-bold text-3xl text-white">Maker<br/>Ghat</span>
-        </div>
-        
-        <button className="bg-[#F1805E] text-white px-8 py-3 rounded-[20px] font-outfit text-base mb-8 hover:opacity-90 transition-opacity">
-          Subscribe to our newsletter
-        </button>
-
-        <div className="flex gap-4 mb-4">
-          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">I</div>
-          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">F</div>
-          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">Y</div>
-          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">L</div>
-        </div>
-
-        <p className="text-sm font-outfit md:text-right mt-4 opacity-80 max-w-[250px]">
-          MakerGhat and its assets are licensed under CC BY-SA4.0
-        </p>
       </div>
     </footer>
   );
 }
-
