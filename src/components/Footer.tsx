@@ -6,9 +6,6 @@ import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF, FaYoutube, FaLinkedin
 export default function Footer() {
   return (
     <footer className="w-full bg-[#4A3B7F] font-outfit text-white relative">
-      <div className="w-full relative h-[110px] -mt-[110px]">
-        <Image src="/images/our-story/Group 259.png" alt="City Skyline" fill className="object-cover object-bottom" />
-      </div>
       <div className="max-w-[1440px] mx-auto px-6 md:px-[90px] py-12 md:py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           

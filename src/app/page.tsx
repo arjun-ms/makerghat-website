@@ -81,6 +81,15 @@ export default function OurStory() {
         </div>
       </main>
 
+      {/* Above Footer Landscape */}
+      <div className="w-full relative leading-none text-[0] mt-[-2px]">
+        <img 
+          src="/images/extracted/above-the-footbar.png" 
+          alt="Village landscape silhouette" 
+          className="w-full h-auto object-cover block m-0 p-0" 
+        />
+      </div>
+
       <Footer />
     </div>
   );
