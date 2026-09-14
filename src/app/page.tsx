@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Timeline from '@/components/Timeline';
+import TeamSection from '@/components/TeamSection';
+import PartnerSection from '@/components/PartnerSection';
 
 export default function OurStory() {
   return (
@@ -12,21 +14,21 @@ export default function OurStory() {
       <main className="max-w-[1440px] mx-auto px-5 md:px-[80px] pt-12 relative">
         
         {/* Overlapping Tabs Layer */}
-        <div className="flex items-end relative z-10 w-full overflow-x-auto hide-scrollbar">
+        <div className="flex items-end relative z-10 w-full overflow-x-auto hide-scrollbar -space-x-8">
           {/* Tab 1: MakerGhat story */}
           <div className="bg-[#F9F4E8] px-[42px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 z-40 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
             <span className="font-semibold text-[18px] text-black">MakerGhat story</span>
           </div>
           {/* Tab 2: MakerGhat team */}
-          <div className="bg-[#F1EEF9] px-[42px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 -ml-[32px] z-30 relative h-[56px] min-w-[254px] flex items-center justify-center cursor-pointer">
+          <div className="bg-[#F1EEF9] px-[42px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 z-30 relative h-[56px] min-w-[254px] flex items-center justify-center cursor-pointer">
             <span className="text-[18px] text-black text-center">MakerGhat team</span>
           </div>
           {/* Tab 3: Support system */}
-          <div className="bg-[#FFF3CC] px-[68px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 -ml-[32px] z-20 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
+          <div className="bg-[#FFF3CC] px-[68px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 z-20 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
             <span className="text-[18px] text-black">Support system</span>
           </div>
           {/* Tab 4: Volunteers & Alumni */}
-          <div className="bg-[#FDEAE5] px-[49px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 -ml-[32px] z-10 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
+          <div className="bg-[#FDEAE5] px-[49px] py-[14px] rounded-t-[20px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] flex-shrink-0 z-10 relative h-[56px] min-w-[231px] flex items-center justify-center cursor-pointer">
             <span className="text-[18px] text-black">Volunteers & Alumni</span>
           </div>
         </div>
@@ -91,6 +93,8 @@ export default function OurStory() {
         </div>
       </main>
 
+      <TeamSection />
+      <PartnerSection />
       <Footer />
     </div>
   );
