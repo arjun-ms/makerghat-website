@@ -27,9 +27,20 @@ const timelineNodes = [
     iconPos: 'right-[-80px] top-[60px] w-[20px] h-[40px] transform rotate-90'
   },
   {
+    year: '2020',
+    side: 'right',
+    top: 1320, // Adjusted top
+    right: 120,
+    image: '/images/extracted/tel_1.png',
+    decor: '/images/extracted/virus.png',
+    decorPos: 'bottom-[0px] left-[-70px] w-[70px] h-[70px]',
+    icon: '/images/extracted/red-double-arrow.png',
+    iconPos: 'top-[-50px] left-[-80px] w-[30px] h-[30px] transform rotate-180'
+  },
+  {
     year: '2021',
     side: 'left',
-    top: 1320, // Above Y=1509 line
+    top: 1520, // Adjusted top
     left: 80,
     image: '/images/extracted/tn3_1.png',
     decor: '/images/extracted/taj-mahal.png',
@@ -38,17 +49,6 @@ const timelineNodes = [
     bgDecorPos: '-left-[90px] -top-[40px] -z-10 w-[280px] h-[280px]',
     icon: '/images/extracted/red-double-arrow.png',
     iconPos: '-left-[60px] top-[140px] w-[20px] h-[40px] transform rotate-90'
-  },
-  {
-    year: '2020',
-    side: 'right',
-    top: 1350, // Above Y=1571 line
-    right: 120,
-    image: '/images/extracted/tel_1.png',
-    decor: '/images/extracted/virus.png',
-    decorPos: 'bottom-[0px] left-[-70px] w-[70px] h-[70px]',
-    icon: '/images/extracted/red-double-arrow.png',
-    iconPos: 'top-[-50px] left-[-80px] w-[30px] h-[30px] transform rotate-180'
   },
   {
     year: '2022',
@@ -113,7 +113,7 @@ const timelineNodes = [
 
 export default function DesktopTimeline() {
   return (
-    <div className="hidden lg:block relative mx-auto mt-[40px] w-[1228px] h-[2657px]">
+    <div id="desktop-timeline" className="hidden lg:block relative mx-auto mt-[40px] w-[1228px] h-[2657px]">
       
       {/* SVG Backbone with dashed overlay */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
