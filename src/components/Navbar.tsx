@@ -8,12 +8,20 @@ export default function Navbar() {
 
   return (
     <nav className="relative flex items-center justify-between px-6 md:px-12 py-6 bg-white border-b border-gray-100">
-      <div className="font-parkinsans font-bold text-2xl text-mg-purple">MakerGhat</div>
+      <div className="flex-shrink-0">
+        <Image 
+          src="/images/extracted/maker_ghat_main_top_left_logo.png" 
+          alt="MakerGhat Logo" 
+          width={180} 
+          height={60} 
+          className="object-contain"
+        />
+      </div>
       
       <button 
         aria-label="Toggle Menu" 
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="md:hidden text-mg-purple focus:outline-none focus:ring-2 focus:ring-mg-orange rounded-md p-1"
+        className="md:hidden text-black focus:outline-none focus:ring-2 focus:ring-mg-orange rounded-md p-1"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           {isMobileMenuOpen ? (
@@ -25,22 +33,22 @@ export default function Navbar() {
       </button>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex gap-8 text-lg">
+      <div className="hidden md:flex gap-8 text-[15px] font-semibold text-black items-center">
         <Link href="#" className="hover:text-mg-purple">About us</Link>
         <Link href="#" className="hover:text-mg-purple flex items-center gap-1">
           Space
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <svg width="8" height="5" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </Link>
         <Link href="#" className="hover:text-mg-purple">Curriculum</Link>
         <Link href="#" className="hover:text-mg-purple">Training</Link>
         <Link href="#" className="hover:text-mg-purple flex items-center gap-1">
           Evidence
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <svg width="8" height="5" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </Link>
         <Link href="#" className="hover:text-mg-purple">Programs</Link>
         <Link href="#" className="hover:text-mg-purple flex items-center gap-1">
           Get involved
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <svg width="8" height="5" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </Link>
       </div>
 
