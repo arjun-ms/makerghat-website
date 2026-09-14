@@ -5,99 +5,109 @@ const timelineNodes = [
   {
     year: '2018',
     side: 'left',
-    top: 980,
-    left: 50,
+    top: 960, // Above Y=1202 line
+    left: 80,
     image: '/images/extracted/powai_1.png',
     decor: '/images/extracted/tools.png',
-    decorPos: 'bottom-[-60px] right-[50px] w-[80px] h-[80px]',
+    decorPos: 'bottom-[40px] right-[-60px] w-[60px] h-[60px]',
+    icon: '/images/extracted/yellow-up-3-arrows.png',
+    iconPos: 'left-[-90px] top-[40px] w-[70px] h-[100px]'
   },
   {
     year: '2019',
     side: 'right',
-    top: 980,
-    right: 150,
+    top: 960, // Above Y=1202 line
+    right: 120,
     image: '/images/extracted/3d_1.png',
     decor: '/images/extracted/money_on_hand.png',
-    decorPos: 'bottom-[-60px] left-[-30px] w-[80px] h-[80px]',
+    decorPos: 'bottom-[60px] left-[-70px] w-[80px] h-[80px]',
     bgDecor: '/images/extracted/green_Ellipse_137.png',
-    bgDecorPos: '-right-[80px] top-[0px] w-[250px] h-[250px] -z-10',
+    bgDecorPos: '-right-[120px] top-[60px] w-[250px] h-[250px] -z-10',
+    icon: '/images/extracted/red-double-arrow.png', // red double arrows going down-ish? Wait, 2019 has down arrows in the reference? Let's skip red-double-arrow if unsure, 2019 has red down arrows in 2..png
+    iconPos: 'right-[-80px] top-[60px] w-[20px] h-[40px] transform rotate-90'
   },
   {
     year: '2021',
     side: 'left',
-    top: 1320,
-    left: 150,
+    top: 1320, // Above Y=1509 line
+    left: 80,
     image: '/images/extracted/tn3_1.png',
     decor: '/images/extracted/taj-mahal.png',
-    decorPos: 'bottom-[-60px] right-[20px] w-[100px] h-[100px]',
+    decorPos: 'bottom-[-30px] right-[0px] w-[100px] h-[100px]',
     bgDecor: '/images/extracted/green_state.png',
-    bgDecorPos: '-left-[80px] -z-10 w-[280px] h-[280px]',
+    bgDecorPos: '-left-[90px] -top-[40px] -z-10 w-[280px] h-[280px]',
     icon: '/images/extracted/red-double-arrow.png',
-    iconPos: '-left-[70px] top-[15px] w-[40px] h-[40px]',
+    iconPos: '-left-[60px] top-[140px] w-[20px] h-[40px] transform rotate-90'
   },
   {
     year: '2020',
     side: 'right',
-    top: 1320,
-    right: 150,
+    top: 1350, // Above Y=1571 line
+    right: 120,
     image: '/images/extracted/tel_1.png',
     decor: '/images/extracted/virus.png',
-    decorPos: 'bottom-[0px] left-[-90px] w-[90px] h-[90px]',
+    decorPos: 'bottom-[0px] left-[-70px] w-[70px] h-[70px]',
     icon: '/images/extracted/red-double-arrow.png',
-    iconPos: '-left-[70px] top-[15px] w-[40px] h-[40px] transform rotate-180',
+    iconPos: 'top-[-50px] left-[-80px] w-[30px] h-[30px] transform rotate-180'
   },
   {
     year: '2022',
     side: 'left',
-    top: 1680,
-    left: 50,
+    top: 1620, // Above Y=1832 line
+    left: 80,
     image: '/images/extracted/part_3_1.png',
     bgDecor: '/images/extracted/red-state.png',
-    bgDecorPos: '-left-[60px] -z-10 w-[280px] h-[280px]',
+    bgDecorPos: '-left-[90px] -top-[40px] -z-10 w-[280px] h-[280px]',
   },
   {
     year: '2023',
     side: 'right',
-    top: 1750,
-    right: 50,
+    top: 1720, // Above Y=1984 line
+    right: 120,
     image: '/images/extracted/storytelling_1.png',
     decor: '/images/extracted/pen-paper-degree.png',
-    decorPos: 'bottom-[20px] left-[-120px] w-[100px] h-[100px]',
+    decorPos: 'bottom-[40px] left-[-90px] w-[80px] h-[80px]',
     bgDecor: '/images/extracted/yellow-circle-board.png',
-    bgDecorPos: '-left-[100px] -top-[40px] -z-10 w-[300px] h-[300px]',
+    bgDecorPos: '-left-[90px] -top-[40px] -z-10 w-[300px] h-[300px]',
   },
   {
     year: '2025',
     side: 'left',
-    top: 2050,
-    left: 100,
+    top: 2000, // Above Y=2320 line
+    left: 80,
     image: '/images/extracted/ignite-02_1.png',
     decor: '/images/extracted/STEM.png',
-    decorPos: 'bottom-[60px] right-[-140px] w-[120px] h-[120px]',
+    decorPos: 'top-[40px] right-[-100px] w-[100px] h-[100px]',
     bgDecor: '/images/extracted/Purple_Rectangle.png',
-    bgDecorPos: '-left-[60px] top-[40px] -z-10 w-[200px] h-[200px]',
+    bgDecorPos: '-left-[30px] top-[40px] -z-10 w-[200px] h-[200px]',
+    icon: '/images/extracted/red-double-arrow.png',
+    iconPos: 'top-[0px] left-[-70px] w-[20px] h-[40px] transform rotate-90'
   },
   {
     year: '2024',
     side: 'right',
-    top: 2150,
-    right: 100,
+    top: 2100, // Above Y=2320 line
+    right: 120,
     image: '/images/extracted/Group_259.png',
     decor: '/images/extracted/rocket.png',
-    decorPos: 'top-[-20px] right-[-20px] w-[60px] h-[60px]',
+    decorPos: 'top-[-40px] right-[-40px] w-[60px] h-[60px]',
     imageContainerClass: 'w-[400px] h-[250px] relative mt-4',
-    containerClass: 'w-[400px]'
+    containerClass: 'w-[400px]',
+    icon: '/images/extracted/red-double-arrow.png',
+    iconPos: 'top-[-40px] left-[-40px] w-[30px] h-[30px] transform rotate-180'
   },
   {
     year: '2026',
     side: 'left',
-    top: 2420,
+    top: 2360, // Above Y=2616 line
     left: 450,
     image: '/images/extracted/dd_(discovery_diary_book).png',
     bgDecor: '/images/extracted/jigsaw_puzzle_piece.png',
     bgDecorPos: '-left-[140px] top-[40px] -z-10 w-[160px] h-[160px]',
     containerClass: 'w-[400px]',
-    imageContainerClass: 'w-[400px] h-[250px] relative'
+    imageContainerClass: 'w-[400px] h-[250px] relative',
+    icon: '/images/extracted/red-double-arrow.png',
+    iconPos: 'right-[-40px] top-[0px] w-[20px] h-[40px] transform rotate-90'
   }
 ];
 

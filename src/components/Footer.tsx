@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#4A3B7F] font-outfit text-white relative">
       <div className="w-full relative h-[110px] -mt-[110px]">
-        <Image src="/images/extracted/Frame_269.png" alt="City Skyline" fill className="object-cover object-bottom" />
+        <Image src="/images/our-story/Group 259.png" alt="City Skyline" fill className="object-cover object-bottom" />
       </div>
       <div className="max-w-[1440px] mx-auto px-6 md:px-[90px] py-12 md:py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
@@ -51,7 +51,7 @@ export default function Footer() {
           {/* Column 4: Logo & Newsletter */}
           <div className="flex flex-col gap-6 md:items-end">
             <div className="text-[32px] font-bold flex items-center gap-2">
-              <span className="text-mg-orange">✋</span>
+              <Image src="/images/hand.png" alt="Maker Ghat Hand" width={36} height={36} className="object-contain" />
               Maker<br/>Ghat
             </div>
             <button className="bg-mg-orange text-white px-6 py-3 rounded-full font-medium hover:bg-orange-600 transition-colors w-full md:w-auto">
