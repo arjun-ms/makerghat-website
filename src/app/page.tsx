@@ -12,7 +12,7 @@ export default function OurStory() {
 
       <main className="w-full relative pb-20 pt-[60px]">
         
-        <div className="max-w-[1228px] mx-auto px-4 md:px-0">
+        <div className="max-w-[1440px] mx-auto px-4 md:px-0">
           
           {/* Overlapping Tabs Layer */}
           <div className="flex items-end relative z-10 w-full overflow-x-auto hide-scrollbar pt-[20px]">
