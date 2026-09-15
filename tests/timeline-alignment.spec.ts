@@ -129,12 +129,21 @@ test.describe('Timeline Alignment & Integration', () => {
       if (!mgStartHeading) return { success: false, error: 'Missing How did MG start heading' };
       
       const textBlock = mgStartHeading.parentElement;
+      
+      if (!textBlock) {
+        throw new Error('Text block not found')
+      }
+
       const greenLineImg = timeline.querySelector('img[alt="Combined Green Path"]');
       if (!greenLineImg) return { success: false, error: 'No green line img' };
       
       const groupPicImg = timeline.querySelector('img[alt="How MG started"]');
       if (!groupPicImg) return { success: false, error: 'No group pic img' };
       const groupPic = groupPicImg.parentElement;
+
+      if (!groupPic) {
+        throw new Error('Group picture not found')
+      }
 
       const group423Rect = group423.getBoundingClientRect();
       const textBlockRect = textBlock.getBoundingClientRect();
