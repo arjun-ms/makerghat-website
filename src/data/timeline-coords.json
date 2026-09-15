@@ -114,7 +114,7 @@
   "Vector 61": {
     "x": 135,
     "y": 1031,
-    "width": 1227,
+    "width": 1305,
     "height": 2655,
     "type": "image"
   },
@@ -152,5 +152,47 @@
     "width": 293,
     "height": 228,
     "type": "image"
+  },
+  "yellow-up-3-arrows": {
+    "x": 60,
+    "y": 2000,
+    "width": 50,
+    "height": 50,
+    "type": "decorator"
+  },
+  "tools": {
+    "x": 483,
+    "y": 2070,
+    "width": 60,
+    "height": 60,
+    "type": "decorator"
+  },
+  "money on hand": {
+    "x": 850,
+    "y": 2070,
+    "width": 70,
+    "height": 70,
+    "type": "decorator"
+  },
+  "green Ellipse 137": {
+    "x": 1180,
+    "y": 2080,
+    "width": 140,
+    "height": 140,
+    "type": "decorator"
+  },
+  "red double arrow 1": {
+    "x": 660,
+    "y": 1930,
+    "width": 60,
+    "height": 20,
+    "type": "decorator"
+  },
+  "red double arrow 2": {
+    "x": 750,
+    "y": 2290,
+    "width": 30,
+    "height": 10,
+    "type": "decorator"
   }
 }

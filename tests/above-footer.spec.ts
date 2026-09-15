@@ -22,14 +22,25 @@ test.describe('Above Footer Section', () => {
       expect(Math.abs(imageBox.width - viewportSize.width)).toBeLessThanOrEqual(1);
     }
 
-    // Check vertical alignment (bottom of image touching top of footer)
+    // Check vertical alignment (bottom of wrapper touching top of footer)
+    const wrapper = landscapeImage.locator('..');
+    const wrapperBox = await wrapper.boundingBox();
     const footerBox = await footer.boundingBox();
+    
+    expect(wrapperBox).toBeTruthy();
     expect(footerBox).toBeTruthy();
 
-    if (imageBox && footerBox) {
-      // The bottom of the image should be exactly equal to the top of the footer
-      const imageBottom = imageBox.y + imageBox.height;
-      expect(Math.abs(imageBottom - footerBox.y)).toBeLessThanOrEqual(1);
+    if (wrapperBox && footerBox) {
+      // The bottom of the wrapper should be at or slightly below the top of the footer 
+      // (0 gap or up to 1px overlap to prevent subpixel white lines)
+      const wrapperBottom = wrapperBox.y + wrapperBox.height;
+      const gap = footerBox.y - wrapperBottom;
+      
+      // Gap must not be positive (no white space)
+      expect(gap).toBeLessThanOrEqual(0);
+      
+      // Overlap must not be more than 1.5px
+      expect(gap).toBeGreaterThanOrEqual(-1.5);
     }
   });
 });
