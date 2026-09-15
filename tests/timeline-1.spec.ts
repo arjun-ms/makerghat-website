@@ -43,11 +43,13 @@ test.describe('Timeline Section 1 (2..png)', () => {
     const box2020 = await year2020.boundingBox();
     const box2021 = await year2021.boundingBox();
 
-    if (box2020 && box2021 && viewportSize) {
-      const centerX = viewportSize.width / 2;
-
-      // In the timeline, 2020 should come before 2021 vertically!
-      expect(box2020.y).toBeLessThan(box2021.y);
+    if (box2018 && box2019 && box2020 && box2021 && viewportSize) {
+      // In the Figma design, 2018 and 2019 are on the same line, and 2021 and 2020 are on the same line.
+      expect(Math.abs(box2018.y - box2019.y)).toBeLessThan(10);
+      expect(Math.abs(box2020.y - box2021.y)).toBeLessThan(10);
+      
+      // 2018/2019 row comes before 2021/2020 row
+      expect(box2018.y).toBeLessThan(box2021.y);
     }
   });
 });
